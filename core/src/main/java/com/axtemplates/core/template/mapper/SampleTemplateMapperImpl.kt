@@ -1,0 +1,76 @@
+package com.axtemplates.core.template.mapper
+
+import com.axtemplates.core.template.state.SampleTemplateBaseState
+import com.core.R
+import com.vro.constants.EMPTY_STRING
+import com.vro.constants.INT_ZERO
+
+open class SampleTemplateMapperImpl : SampleTemplateMapper {
+
+    override fun mapTopLeftIcon(): Int {
+        return R.drawable.ic_arrow
+    }
+
+    override fun mapTopRightIcon(): Int {
+        return R.drawable.ic_profile
+    }
+
+    override fun mapUsername(state: SampleTemplateBaseState): String {
+        return state.username
+    }
+
+    override fun mapBio(state: SampleTemplateBaseState): String {
+        return state.bio
+    }
+
+    override fun mapFollowersText(): String {
+        return "Followers"
+    }
+
+    override fun mapFollowingText(): String {
+        return "Following"
+    }
+
+    override fun mapFollowersValue(followers: Int): String {
+        return mapValue(followers)
+    }
+
+    override fun mapFollowingValue(following: Int): String {
+        return mapValue(following)
+    }
+
+    private fun mapValue(value: Int): String {
+        return when {
+            value >= MILLION -> {
+                val millions = value / MILLION.toFloat()
+                if (value % MILLION == INT_ZERO) "${millions.toInt()}M"
+                else MILLION_FORMAT.format(millions).replace(POINT_ZERO, EMPTY_STRING)
+            }
+
+            value >= TEN_THOUSAND -> {
+                val thousands = value / THOUSAND.toFloat()
+                if (value % THOUSAND == INT_ZERO) "${thousands.toInt()}k"
+                else THOUSAND_FORMAT.format(thousands).replace(POINT_ZERO, EMPTY_STRING)
+            }
+
+            else -> value.toString()
+        }
+    }
+
+    override fun mapLeftButtonText(): String {
+        return "Follow"
+    }
+
+    override fun mapRightButtonText(): String {
+        return "Message"
+    }
+
+    companion object {
+        private const val MILLION = 1_000_000
+        private const val THOUSAND = 1_000
+        private const val TEN_THOUSAND = 10_000
+        private const val MILLION_FORMAT = "%.1fM"
+        private const val THOUSAND_FORMAT = "%.1fk"
+        private const val POINT_ZERO = ".0"
+    }
+}
