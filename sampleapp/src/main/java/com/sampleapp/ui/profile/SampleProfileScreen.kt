@@ -5,18 +5,19 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.axtemplates.core.template.SampleTemplate
-import com.axtemplates.core.template.SampleTemplateBase
+import com.axtemplates.core.template.profile.profileone.presentation.ProfileOneTemplate
 import com.sampleapp.ui.base.SampleBaseScreen
-import com.sampleapp.ui.subtemplate.SampleSubTemplate
+import com.sampleapp.ui.profileone.presentation.ProfileOneSubTemplate
 import com.vro.compose.preview.VROLightMultiDevicePreview
 import com.vro.compose.states.VROBottomBarBaseState
 import com.vro.compose.states.VROBottomBarBaseState.VROBottomBarState
 import com.vro.constants.INT_ONE
-import org.koin.core.context.GlobalContext.get
-import org.koin.core.qualifier.named
+import org.koin.core.component.createScope
+import org.koin.core.scope.Scope
 
 class SampleProfileScreen : SampleBaseScreen<SampleProfileState, SampleProfileEvents>() {
+
+    override val scope: Scope by lazy { createScope(this) }
 
     override fun setBottomBar(currentState: VROBottomBarBaseState) =
         VROBottomBarState(selectedItem = INT_ONE)
@@ -24,8 +25,7 @@ class SampleProfileScreen : SampleBaseScreen<SampleProfileState, SampleProfileEv
     @Composable
     override fun ScreenContent(state: SampleProfileState) {
         Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-            AddTemplate(SampleTemplate::class)
-            AddTemplate(SampleSubTemplate::class)
+            AddTemplate(ProfileOneTemplate::class)
         }
     }
 

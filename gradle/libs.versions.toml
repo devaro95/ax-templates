@@ -1,5 +1,5 @@
 [versions]
-vro = "1.11.4"
+vro = "1.11.14"
 androidGradlePlugin = "8.3.2"
 jetbrains = "2.0.21"
 kotlin = "2.0.0"
@@ -11,9 +11,13 @@ composeTooling = "1.7.8"
 composeActivity = "1.10.1"
 coreKtx = "1.15.0"
 appcompat = "1.7.0"
+http3 = "4.12.0"
 composeRuntime = "1.7.8"
+retrofitGson = "2.10.0"
+coil = "2.6.0"
 
 [libraries]
+vro = { group = "com.github.devaro95.vro", name = "vro", version.ref = "vro" }
 vro-compose = { group = "com.github.devaro95.vro", name = "vro-compose", version.ref = "vro" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
@@ -24,6 +28,9 @@ compose-activity = { group = "androidx.activity", name = "activity-compose", ver
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 compose-runtime = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "composeRuntime" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+http3 = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "http3" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitGson" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

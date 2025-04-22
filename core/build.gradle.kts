@@ -31,7 +31,12 @@ android {
 
 dependencies {
     api(libs.vro.compose)
+    api(libs.vro)
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.http3)
+    implementation(libs.retrofit.gson)
+    implementation(libs.coil)
+    debugImplementation(libs.ui.tooling)
 }
