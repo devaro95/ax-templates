@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">sampleapp</string>
-    <string name="home_toolbar">Home</string>
-    <string name="profile_toolbar">Profile</string>
-    <string name="detail_toolbar">Detail</string>
-</resources>

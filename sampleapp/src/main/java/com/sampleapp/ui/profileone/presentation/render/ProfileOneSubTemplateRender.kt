@@ -1,6 +1,0 @@
-package com.sampleapp.ui.profileone.presentation.render
-
-import com.axtemplates.core.template.profile.profileone.presentation.render.ProfileOneTemplateRender
-import com.sampleapp.ui.profileone.presentation.ProfileOneSubTemplateState
-
-interface ProfileOneSubTemplateRender : ProfileOneTemplateRender<ProfileOneSubTemplateState>
