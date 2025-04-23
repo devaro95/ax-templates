@@ -15,7 +15,7 @@ sidebar_label: Render
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render.png" alt="Captura" width="600" /></center>
     <br />
 ```kotlin
 @Composable
@@ -88,7 +88,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-2.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-2.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -104,7 +104,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-3.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-3.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -126,7 +126,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-4.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-4.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -147,7 +147,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-5.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-5.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -169,7 +169,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-6.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-6.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -193,7 +193,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-7.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-7.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable
@@ -226,7 +226,7 @@ override fun BoxScope.RenderHeaderSection() {
  <details>
     <summary>Show Code</summary>
     <br />
-    <center><img src="/img/sample-template-render-8.png" alt="Captura" width="600" /></center>
+    <center><img src="/ax-templates/img/sample-template-render-8.png" alt="Captura" width="600" /></center>
     <br />
     ```kotlin
     @Composable

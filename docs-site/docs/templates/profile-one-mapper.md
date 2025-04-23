@@ -8,11 +8,10 @@ sidebar_label: Mapper
 
 ## ProfileOneTemplateMapperImpl - [Ver en GitHub](https://github.com/devaro95/ax-templates/blob/main/core/src/main/java/com/axtemplates/core/template/profile/profileone/presentation/mapper/ProfileOneTemplateMapperImpl.kt)
 
-
-
 <center>
-  <img src="/img/sample-template.png" alt="Captura" width="300" />
+  <img src="/ax-templates/img/sample-template.png" alt="Captura" width="300" />
 </center>
+
 <br />
 
 | Nº  | Mapper function                                         | Return Value                                                                |

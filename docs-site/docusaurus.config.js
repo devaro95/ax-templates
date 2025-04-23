@@ -43,10 +43,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,7 +59,7 @@ const config = {
       navbar: {
         title: 'AXTemplates',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'AXTemplates',
           src: 'img/logo.png',
         },
         items: [
@@ -73,9 +69,8 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/devaro95/ax-templates',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,10 +91,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/devaro95/ax-templates',
